@@ -1,0 +1,10 @@
+{
+  "name": "klyro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --parallel --filter web --filter @klyro/api dev",
+    "dev:web": "pnpm --filter web start",
+    "dev:api": "pnpm --filter @klyro/api dev"
+  }
+}

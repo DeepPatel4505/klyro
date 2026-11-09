@@ -1,0 +1,10 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+allowBuilds:
+  '@parcel/watcher': false
+  '@prisma/engines': false
+  esbuild: false
+  lmdb: false
+  msgpackr-extract: false
+  prisma: false
