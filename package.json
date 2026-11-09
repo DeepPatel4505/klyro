@@ -2,9 +2,17 @@
   "name": "klyro",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "pnpm --parallel --filter web --filter @klyro/api dev",
     "dev:web": "pnpm --filter web start",
-    "dev:api": "pnpm --filter @klyro/api dev"
+    "dev:api": "pnpm --filter @klyro/api dev",
+    "prepare": "husky",
+    "lint:branch": "node scripts/validate-branch-name.js"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "husky": "^9.1.7"
   }
 }
